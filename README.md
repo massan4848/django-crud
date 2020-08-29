@@ -1,7 +1,13 @@
 以下のdjango解説動画を利用して日記アプリをつくった  
 https://www.youtube.com/watch?v=2ttBx0pOLP0&list=PL8EQJPo_jL6tyqlYPB4xaH4b0iC21wETt&index=1  
 
-仮想環境を使っているため、`pipenv shell`で仮想環境に入ってから、`python manage.py runserver`でアプリを確認できる。  
+**初めてクローンしたとき**  
+仮想環境を使っているため、ない場合、pip install pipenvでpipenv を入れる。  
+`pipenv shell`で仮想環境に入ってから、このリポジトリで使う環境を復元するため、`pip sync --dev`で復元。  
+
+**次回以降**  
+`python manage.py runserver`でアプリを確認できる。  
+次回以降は`pipenv shell`で仮想環境に入り、作業できる。
 会員登録と記事編集ができる。  
 作成していないページあり。  
 
@@ -10,7 +16,7 @@ https://www.youtube.com/watch?v=2ttBx0pOLP0&list=PL8EQJPo_jL6tyqlYPB4xaH4b0iC21w
 *** 以下メモ ***  
 
 # startproject状態でのファイルの説明 sec0
-​​manage.py コマンド   
+manage.py コマンド   
 \_\_init\_\_.py パッケージ  
 setting.py  
 url.py urlをつくる  
